@@ -1,0 +1,207 @@
+html, body {
+  background-color: #000000;
+  margin: 0;
+  font-family: 'Catamaran', Helvetica, sans-serif;
+
+}
+
+p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: .5px;
+  margin: 0;
+}
+
+/* GRID */
+.container {
+  width: 992px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  top: 0;
+}
+
+.container:before,
+.container:after {
+  content: "";
+  display: table;
+}
+
+.container:after {
+  clear: both;
+}
+
+.one-half, .one-third, .one-fourth, .one-fifth {
+  float:left;
+  position:relative;
+  min-height: 1px;
+}
+
+.one-half {
+  width: 50%;
+}
+
+.one-third {
+  width: 33.33333%;
+}
+
+.one-fourth {
+  width: 20%;
+}
+
+.one-fifth {
+  width: 25%;
+}
+
+/* NAVBAR */
+
+.cs-nav {
+  background-color: black;
+  display: block;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: auto;
+  top: 0;
+  box-shadow: 0 10px 22px rgba(0,0,0,.5);
+}
+
+.cs-nav ul {
+  padding: 20px 0;
+  margin: auto;
+  height: auto;
+  color: #dbdbd5;
+  list-style-type: none;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.cs-nav ul li {
+  float: left;
+  display: inline-block;
+  height: auto;
+  padding-top: 15px;
+  margin-left: 46px;
+  text-align: right;
+  float: right;
+}
+
+.cs-nav ul li a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-hover li:hover {
+  border-bottom: 3px solid #e0be4f;
+  color: #e0be4f;
+  padding-bottom: 2px;
+}
+
+#nav-logo {
+  height: 43px;
+  padding-top: 0;
+  margin-left: 0;
+  float: left;
+}
+
+#nav-logo-name {
+  margin-left: 18px;
+  text-align: left;
+  float: left;
+}
+
+#nav-logo #nav-logo-name:nohover {
+
+}
+
+
+/* SUMMARY SECTION */
+
+.cs-summary {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  padding-top: 130px;
+  padding-bottom: 5%;
+}
+
+.cs-summary h1 {
+  font-size: 70px;
+  font-weight: 100;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  line-height: 20px;
+  letter-spacing: .25px;
+  padding-bottom: 50px;
+}
+
+.cs-summary img {
+  width: 100%;
+}
+
+.center-text {
+  text-align: center;
+  color: white;
+}
+
+h3 {
+  text-transform: uppercase;
+  padding-bottom: 3px;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 0;
+  margin-bottom: 38px;
+}
+
+.center-text p {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.underline {
+  border-bottom: 3px solid black;
+}
+
+.underline-white {
+  border-bottom: 3px solid white;
+}
+
+/* PROBLEM/SOLUTION SECTION */
+
+.cs-probsol {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  float: left;
+}
+
+.gray {
+  background-color: #e6e6e6;
+  padding: 3% 0;
+}
+
+.probsol-left {
+  width: 450px;
+  float: right;
+  padding-right: 5%;
+  text-align: center;
+}
+
+.white {
+  background-color: white;
+  padding: 3% 0;
+}
+
+.probsol-right {
+  width: 450px;
+  float: left;
+  padding-left: 5%;
+  text-align: center;
+}
