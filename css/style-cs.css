@@ -43,7 +43,7 @@ p {
 }
 
 .one-third {
-  width: 33.33333%;
+  width: 29%;
 }
 
 .one-fourth {
@@ -119,7 +119,7 @@ p {
 
 /* SUMMARY SECTION */
 
-.cs-summary, .cs-white{
+.cs-summary, .cs-white, .cs-gray{
   width: 100%;
   height: auto;
   display: block;
@@ -177,6 +177,7 @@ h3 {
   border-bottom: 3px solid white;
 }
 
+
 /* PROBLEM/SOLUTION SECTION */
 
 .cs-probsol {
@@ -215,8 +216,14 @@ h3 {
   padding-bottom: 36px;
 }
 
+/* PROCESS SECTION */
+
 .cs-white {
   background-color: white;
+}
+
+.cs-gray {
+  background-color: #f2f2f2;
 }
 
 .research {
@@ -266,4 +273,42 @@ h5 {
   float: left;
   display: block;
   position: relative;
+}
+
+#user-flows {
+  background-image: url(../img/cs-blocmarc-flows.jpg);
+  background-size: cover;
+}
+
+.float-box-right {
+  padding: 40px;
+  box-shadow: 0 0 60px rgba(0,0,0,.25);
+  background-color: white;
+}
+
+.float-box-right p {
+  padding-bottom: 0;
+}
+
+.standalone-left {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.standalone-left p {
+  padding-bottom: 0;
+}
+
+.color-grid {
+  float: right;
+  padding-top: 36px;
+}
+.color-box {
+  margin: 10px;
+  box-sizing: border-box;
+  padding: 58px 0;
+  font-weight: 400;
+  color: white;
+  text-align: center;
 }
