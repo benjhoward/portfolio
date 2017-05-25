@@ -64,7 +64,7 @@ p {
   width: 100%;
   height: auto;
   top: 0;
-  box-shadow: 0 10px 22px rgba(0,0,0,.5);
+  box-shadow: 0 5px 22px rgba(0,0,0,.4);
 }
 
 .cs-nav ul {
@@ -242,6 +242,7 @@ h4 {
   display: block;
   margin: 0;
   height: 30px;
+  margin-top: 14px;
 }
 
 h5 {
@@ -258,4 +259,11 @@ h5 {
 .process-left p, .process-right p {
   float: left;
   padding: 36px 0;  
+}
+
+.process-mugs {
+  height: 61px;
+  float: left;
+  display: block;
+  position: relative;
 }
