@@ -47,11 +47,11 @@ p {
 }
 
 .one-fourth {
-  width: 20%;
+  width: 25%;
 }
 
 .one-fifth {
-  width: 25%;
+  width: 20%;
 }
 
 /* NAVBAR */
@@ -119,13 +119,18 @@ p {
 
 /* SUMMARY SECTION */
 
-.cs-summary {
+.cs-summary, .cs-white{
   width: 100%;
   height: auto;
   display: block;
   position: relative;
-  padding-top: 130px;
+  padding-top: 5%;
   padding-bottom: 5%;
+  float: left;
+}
+
+#intro-padding {
+  padding-top: 130px;
 }
 
 .cs-summary h1 {
@@ -184,10 +189,10 @@ h3 {
 
 .gray {
   background-color: #e6e6e6;
-  padding: 3% 0;
+  padding: 4% 0;
 }
 
-.probsol-left {
+.probsol-left, .process-left {
   width: 450px;
   float: right;
   padding-right: 5%;
@@ -195,13 +200,62 @@ h3 {
 }
 
 .white {
-  background-color: white;
-  padding: 3% 0;
+  background-color: #f2f2f2;
+  padding: 4% 0;
 }
 
-.probsol-right {
+.probsol-right, .process-right {
   width: 450px;
   float: left;
   padding-left: 5%;
   text-align: center;
+}
+
+#laptop-padding {
+  padding-bottom: 36px;
+}
+
+.cs-white {
+  background-color: white;
+}
+
+.research {
+  padding: 0 18px;
+  box-sizing: border-box;
+}
+
+.process-tag {
+  padding: 8px 16px;
+  background: #cccccc;
+  line-height: 0;
+  font-weight: 700;
+  color: white;
+}
+
+#research-tag {
+  margin-left: 16px;
+}
+
+h4 {
+  float: left;
+  width: 100%;
+  display: block;
+  margin: 0;
+  height: 30px;
+}
+
+h5 {
+  margin: 36px 0 0 0;
+  font-size: 60px;
+  color: #e0be4f;
+  font-weight: 100;
+}
+
+.process-left, .process-right {
+  text-align: left;
+}
+
+.process-left p, .process-right p {
+  float: left;
+  padding: 36px 0;  
 }
