@@ -14,7 +14,7 @@ p {
 }
 
 /* GRID */
-.container {
+.container, .img-container{
   width: 992px;
   margin-right: auto;
   margin-left: auto;
@@ -30,6 +30,14 @@ p {
 
 .container:after {
   clear: both;
+}
+
+.img-container {
+  width: 1200px;
+}
+
+.img-container img {
+  width: 100%;
 }
 
 .one-half, .one-third, .one-fourth, .one-fifth {
@@ -278,6 +286,8 @@ h5 {
 #user-flows {
   background-image: url(../img/cs-blocmarc-flows.jpg);
   background-size: cover;
+  padding-top: 8%;
+  padding-bottom: 8%;
 }
 
 .float-box-right {
@@ -296,7 +306,15 @@ h5 {
   box-sizing: border-box;
 }
 
-.standalone-left p {
+.standalone-center {
+  width: 60%;
+  margin: 0 auto;
+  float: none;
+  text-align: center;
+  padding-right: 0;
+}
+
+.standalone-left p, .standalone-center p {
   padding-bottom: 0;
 }
 
@@ -311,4 +329,41 @@ h5 {
   font-weight: 400;
   color: white;
   text-align: center;
+}
+
+#logo-space {
+  padding-bottom: 30px;
+}
+
+.fixed-mockup {
+  height: 880px;
+  box-sizing: border-box;
+}
+
+#mockups {
+  position: absolute;
+  left: 0;
+  top: 536px;
+}
+
+.nav-gif {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.nav-gif img {
+  width: 100%;
+  padding-top: 36px;
+}
+
+.three-col {
+  float: left;
+  padding-top: 20px;
+}
+
+.three-col p {
+  width: 29%;
+  margin: 0 16px;
+  display: inline-block;
+  vertical-align: top;
 }
