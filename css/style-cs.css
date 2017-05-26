@@ -408,6 +408,11 @@ h2 {
   padding-top: 13px;
 }
 
+.bottom-footer {
+  float: left;
+  width: 100%;  
+}
+
 .footer-pics {
   float: left;
   width: 100%;
