@@ -332,6 +332,14 @@ h3 {
   color: white;
 }
 
+h4 a {
+  text-decoration: none;
+}
+
+.process-tag-link:hover {
+  background-color: #e0be4f;
+}
+
 #research-tag {
   margin-left: 16px;
 }
