@@ -13,6 +13,10 @@ p {
   margin: 0;
 }
 
+img {
+  width: 100%;
+}
+
 /* GRID */
 .container, .img-container{
   width: 992px;
@@ -310,12 +314,29 @@ h3 {
 
 /* PROCESS SECTION */
 
+.parallax {
+    /*height: 400px;*/    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    box-shadow: inset 0px 0px 20px 4px rgba(0, 0, 0, 0.5);
+}    
+
 .cs-white {
   background-color: white;
 }
 
 .cs-gray {
   background-color: #f2f2f2;
+}
+
+#breakthru-process {
+  background-image: url(../img/cs-breakthru-process.jpg);
+  background-size: cover;
+  padding-top: 22%;
+  padding-bottom: 8%;  
 }
 
 .research {
@@ -389,13 +410,21 @@ h5 {
   float: left;
   display: block;
   position: relative;
+  width: initial;
+}
+
+.background-img {
+  background-size: cover;
+  padding-top: 8%;
+  padding-bottom: 8%;
 }
 
 #user-flows {
   background-image: url(../img/cs-blocmarc-flows.jpg);
-  background-size: cover;
-  padding-top: 8%;
-  padding-bottom: 8%;
+}
+
+#inspiration {
+  background-image: url(../img/cs-breakthru-inspiration.jpg);
 }
 
 .float-box-right {
@@ -416,7 +445,7 @@ h5 {
 }
 
 @media(max-width: 700px) {
-  #user-flows {
+  #user-flows, #inspiration{
     padding: 10% 0;
   }
   .float-box-right {
@@ -431,6 +460,12 @@ h5 {
   box-sizing: border-box;
 }
 
+.standalone-right {
+  float: right;
+  width: 50%;
+  box-sizing: border-box;
+}
+
 .standalone-center {
   width: 60%;
   margin: 0 auto;
@@ -439,7 +474,7 @@ h5 {
   padding-right: 0;
 }
 
-.standalone-left p, .standalone-center p {
+.standalone-left p, .standalone-right p, .standalone-center p {
   padding-bottom: 0;
 }
 
@@ -448,7 +483,7 @@ h5 {
     width: 100%;
     text-align: left;
   }
-  .standalone-left {
+  .standalone-left, .standalone-right {
     width: 100%;
   }
 }
@@ -457,6 +492,7 @@ h5 {
   float: right;
   padding-top: 36px;
 }
+
 .color-box {
   margin: 10px;
   box-sizing: border-box;
@@ -525,6 +561,12 @@ h5 {
   }
 }
 
+.bottom-pic {
+  float: left;
+  margin: 0 auto;
+  line-height: 0;
+}
+
 .nav-gif {
   width: 900px;
   margin: 0 auto;
@@ -538,6 +580,9 @@ h5 {
 @media (max-width: 1000px) {
   .nav-gif {
     width: 100%;
+  }
+  .padding-t-mobile {
+    padding-top: 25px;
   }
 }
 
@@ -684,6 +729,20 @@ h6 {
   }
 }
 
+.no-b-padding {
+  padding-bottom: 0;
+}
+
+.no-b-padding p {
+  padding-bottom: 0;
+}
+
+@media(max-width: 1000px) {
+  .pic-full {
+    width: 100%;
+  }
+}
+
 #mag-pic {
   background-image: url(../img/link-magazine-1.jpg);
 }
@@ -694,4 +753,8 @@ h6 {
 
 #portfolio-pic {
   background-image: url(../img/link-portfolio-1.jpg);
+}
+
+#blocmarc-pic {
+  background-image: url(../img/link-blocmarc.jpg);
 }
