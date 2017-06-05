@@ -24,6 +24,18 @@ img {
   width: 100%;
 }
 
+.mobile-img {
+  display: none;
+}
+
+@media(max-width: 700px) {
+  .mobile-img {
+    display: block;
+    float: left;
+    width: 100%;
+  }
+}
+
 /* GRID */
 .container, .img-container{
   width: 992px;
@@ -75,7 +87,7 @@ img {
 
 @media(max-width: 700px) {
   .container {
-    width: 90%;
+    width: 85%;
   }
   .img-container {
     width: 100%;
@@ -527,11 +539,20 @@ h5 {
 
 @media(max-width: 700px) {
   #user-flows, #inspiration{
-    padding: 10% 0;
+    padding: 0;
+    background-image: none;
+  }
+  #inspiration, #inspiration.float-box-right {
+    background-color: #f2f2f2;
   }
   .float-box-right {
     float: left;
-    padding: 30px;
+    width: 100%;
+    box-shadow: none;
+    padding: 10% 0;
+  }
+  #mobile-gray {
+    background-color: #f2f2f2;
   }
 }
 
@@ -755,6 +776,7 @@ h2 {
   width: 33.3333%;
   height: 300px;
   background-size: cover;
+  background-position: center;
 }
 
 .footer-hover {
