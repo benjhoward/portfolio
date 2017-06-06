@@ -13,6 +13,13 @@ p {
   margin: 0;
 }
 
+.describe {
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: .5px;
+  margin-top: 6px;
+}
+
 @media(max-width: 700px) {
   p {
     font-size: 16px;
@@ -43,6 +50,10 @@ img {
   margin-left: auto;
   position: relative;
   top: 0;
+}
+
+.container-index {
+  width: 1200px;
 }
 
 .container:before,
@@ -130,6 +141,10 @@ img {
 
 /* NAVBAR */
 
+.container-nav {
+  border-top: 2px solid #333333;
+}
+
 .cs-nav {
   background-color: black;
   display: block;
@@ -204,6 +219,10 @@ img {
   }
 }
 
+.nav-scroll {
+  position: absolute;
+  top: 596px;
+}
 
 /* SUMMARY SECTION */
 
@@ -240,7 +259,17 @@ img {
   padding-bottom: 50px;
 }
 
-h1:hover {
+.header-h1 {
+  padding-bottom: 0;
+  padding-top: 50px;
+  position: fixed;
+}
+
+.header-h1 h1{
+  padding-top: 8%;
+}
+
+h1:not(.no-hover):hover {
   color: #e0be4f;
 }
 
@@ -293,6 +322,10 @@ h3 {
   margin: 0 auto;
 }
 
+.header-text p {
+  width: 50%;
+}
+
 @media (max-width: 1000px) {
   .center-text p {
     width: 100%;
@@ -305,6 +338,19 @@ h3 {
 
 .underline-white {
   border-bottom: 3px solid white;
+}
+
+
+/*MAIN*/
+
+main {
+  top: 681px;
+  position: relative;
+  padding-top: 50px;
+  background-color: black;
+  float: left;
+  width: 100%;
+  display: block;
 }
 
 
@@ -781,9 +827,9 @@ h2 {
 
 .footer-hover {
   box-sizing: border-box;
-  padding: 60px;
+  padding: 30px;
   height: 100%;
-  background-color: rgba(0,0,0,.75);
+  background-color: rgba(0,0,0,.9);
   color: white;
   opacity: 0;
 }
@@ -891,6 +937,10 @@ h6 {
   filter: drop-shadow(0 3px 4px rgba(0,0,0,.19));
 }
 
+.index-footer {
+  top: 700px;
+}
+
 #mag-pic {
   background-image: url(../img/link-magazine-1.jpg);
 }
@@ -899,10 +949,62 @@ h6 {
   background-image: url(../img/link-breakthru-2.jpg);
 }
 
+#magazines-pic {
+  background-image: url(../img/home-mags.jpg);
+}
+
 #portfolio-pic {
   background-image: url(../img/link-portfolio-1.jpg);
 }
 
 #blocmarc-pic {
   background-image: url(../img/link-blocmarc.jpg);
+}
+
+#helmet-pic {
+  background-image: url(../img/home-helmet.jpg);
+}
+
+#raven-pic {
+  background-image: url(../img/home-raven.jpg);
+}
+
+#experience-pic {
+  background-image: url(../img/home-experience.jpg);
+}
+
+#perfect-pic {
+  background-image: url(../img/home-perfect.jpg);
+}
+
+#block-pic {
+  background-image: url(../img/home-block.jpg);
+}
+
+#gettysburg-pic {
+  background-image: url(../img/home-gettysburg.jpg);
+}
+
+#divisional-pic {
+  background-image: url(../img/home-divisional.jpg);
+}
+
+#TentoBen-pic {
+  background-image: url(../img/home-10toBen.jpg);
+}
+
+#ruth-pic {
+  background-image: url(../img/home-ruth.jpg);
+}
+
+#fork-pic {
+  background-image: url(../img/home-fork.jpg);
+}
+
+#firstnight-pic {
+  background-image: url(../img/home-first-night.jpg);
+}
+
+#boyd-pic {
+  background-image: url(../img/home-boyd.jpg);
 }
