@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
 
-    <title>Ben Howard | Design • PGH</title>
+    <title>Ben Howard | Design | Portfolio</title>
 
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,400,700" rel="stylesheet" type="text/css">
@@ -22,19 +22,7 @@
 
   <body>
 
-    <!-- NAVBAR -->
-    <nav class="cs-nav nav-scroll">
-        <div class="container container-index container-nav">
-          <ul class="one-half" id="mobile-logo">
-            <li id="nav-logo"><img src="img/bh-logo.svg" height="43px" alt="BH"/></li>
-            <li id="nav-logo-name">BEN HOWARD</li>
-          </ul>
-          <ul class="one-half nav-hover">
-            <li><a href="index.html">WORK</a></li>
-            <li><a href="#">CONTACT</a></li>
-          </ul>
-        </div>
-    </nav>
+    <!-- HEADER -->
 
     <header class="cs-summary header-h1">
       <div class="container container-index">
@@ -45,6 +33,38 @@
         </div>
       </div>
     </header>
+
+
+    <!-- NAVBAR -->
+    <nav>
+      <section class="cs-nav navbar">
+          <div class="container container-index container-nav">
+            <ul class="one-half" id="mobile-logo">
+              <li id="nav-logo"><img src="img/bh-logo.svg" height="43px" alt="BH"/></li>
+              <li id="nav-logo-name">BEN HOWARD</li>
+            </ul>
+            <ul class="one-half nav-hover">
+              <li><a href="index.html">WORK</a></li>
+              <li><a href="#">CONTACT</a></li>
+            </ul>
+          </div>
+       </section>   
+    </nav>
+
+<!--     <nav class="cs-nav nav-scroll navbar">
+        <div class="container container-index container-nav">
+          <ul class="one-half" id="mobile-logo">
+            <li id="nav-logo"><img src="img/bh-logo.svg" height="43px" alt="BH"/></li>
+            <li id="nav-logo-name">BEN HOWARD</li>
+          </ul>
+          <ul class="one-half nav-hover">
+            <li><a href="index.html">WORK</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+    </nav> -->
+
+    <!-- MAIN -->
 
     <main>
       <section class="container container-index work-grid">
@@ -215,6 +235,7 @@
     </main>
 
     <!-- FOOTER -->
+
     <footer class="cs-summary index-footer" style="padding-bottom: 0">
       <nav class="cs-nav footer-nav">
         <div class="container container-index container-footer">
@@ -229,8 +250,25 @@
           </ul>
         </div>
       </nav>
-    </footer>      
-  
+    </footer>
+
+    <script>
+
+      var nb = $(".navbar");
+      var tall = $(window).height();
+      var nbheight = $(".navbar").height();
+      var stick = tall - nbheight;
+
+      $(window).scroll(function() {
+        if( $(this).scrollTop() > stick -50){
+          nb.addClass("navbar-scrolled");
+        }
+        else {
+          nb.removeClass("navbar-scrolled");
+        }
+      });
+
+    </script>
 
   </body>
 

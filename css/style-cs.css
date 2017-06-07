@@ -147,6 +147,13 @@ img {
 
 /* NAVBAR */
 
+nav {
+  display: block;
+  position: relative;
+  z-index: 2000;
+  top: 556px;
+}
+
 .container-nav {
   border-top: 2px solid #333333;
 }
@@ -225,19 +232,25 @@ img {
   }
 }
 
-.nav-scroll {
-  position: absolute;
-  top: 596px;
+.navbar {
+  position: relative;
+  height: 85px;
+}
+
+.navbar-scrolled {
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 @media(max-width: 1000px) {
-  .nav-scroll {
+  nav {
     top: 490px;
   }
 }
 
 @media(max-width: 500px) {
-  .nav-scroll {
+  nav {
     top: 550px;
   }
 }
@@ -284,7 +297,7 @@ img {
 }
 
 .header-h1 h1{
-  padding-top: 8%;
+  padding-top: 6%;
 }
 
 h1:not(.no-hover):hover {
@@ -365,7 +378,7 @@ h3 {
 /*MAIN*/
 
 main {
-  top: 681px;
+  top: 556px;
   position: relative;
   padding-top: 50px;
   background-color: black;
@@ -376,7 +389,7 @@ main {
 
 @media(max-width: 1000px) {
   main {
-    top: 550px;
+    top: 466px;
   }
 }
 
