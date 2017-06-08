@@ -37,18 +37,20 @@
 
     <!-- NAVBAR -->
     <nav>
-      <section class="cs-nav navbar">
-          <div class="container container-index container-nav">
-            <ul class="one-half" id="mobile-logo">
-              <li id="nav-logo"><img src="img/bh-logo.svg" height="43px" alt="BH"/></li>
-              <li id="nav-logo-name">BEN HOWARD</li>
-            </ul>
-            <ul class="one-half nav-hover">
-              <li><a href="index.html">WORK</a></li>
-              <li><a href="#">CONTACT</a></li>
-            </ul>
-          </div>
-       </section>   
+      <div class="navbar-wrapper">
+        <section class="cs-nav navbar">
+            <div class="container container-index container-nav">
+              <ul class="one-half" id="mobile-logo">
+                <li id="nav-logo"><img src="img/bh-logo.svg" height="43px" alt="BH"/></li>
+                <li id="nav-logo-name">BEN HOWARD</li>
+              </ul>
+              <ul class="one-half nav-hover">
+                <li><a href="index.html">WORK</a></li>
+                <li><a href="#">CONTACT</a></li>
+              </ul>
+            </div>
+         </section> 
+      </div>  
     </nav>
 
 <!--     <nav class="cs-nav nav-scroll navbar">
@@ -252,7 +254,15 @@
       </nav>
     </footer>
 
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous">    
+    </script>
+
+
     <script>
+
 
       var nb = $(".navbar");
       var tall = $(window).height();
@@ -260,7 +270,7 @@
       var stick = tall - nbheight;
 
       $(window).scroll(function() {
-        if( $(this).scrollTop() > stick -50){
+        if( $(this).scrollTop() > stick -220){
           nb.addClass("navbar-scrolled");
         }
         else {
