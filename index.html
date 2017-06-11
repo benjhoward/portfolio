@@ -27,7 +27,7 @@
     <header class="cs-summary header-h1">
       <div class="container container-index">
         <img src="img/bh-header.svg" height="222px" alt="Ben Howard • Design"/>
-        <h1 class="no-hover">Good morning.</h1>
+        <h1 class="no-hover" id="greet">Good morning.</h1>
         <div class="center-text header-text">
           <p>It&rsquo;s nice to see you. My name is Ben Howard and I&rsquo;m a designer who codes in Pittsburgh, PA. Feel free to check out some of the things I&rsquo;ve made or drop me a line if you&rsquo;d like to chat.</p>
         </div>
@@ -277,6 +277,10 @@
           nb.removeClass("navbar-scrolled");
         }
       });
+
+      var greetID = document.getElementById('greet').onclick = function() {
+        this.innerHTML = 'Good evening.';
+      }; 
 
     </script>
 
