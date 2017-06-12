@@ -1022,7 +1022,6 @@ h6 {
   }
 }
 
-
 #mag-pic {
   background-image: url(../img/link-magazine-1.jpg);
 }
@@ -1089,4 +1088,116 @@ h6 {
 
 #boyd-pic {
   background-image: url(../img/home-boyd.jpg);
+}
+
+
+/* CONTACT */
+
+.contact h1 {
+  color: white;
+  font-weight: 700;
+  font-size: 33px;
+  text-align: left;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+.contact ul {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.contact ul li{
+  display: block;
+  float: left;
+  margin-right: 30px;
+}
+
+.contact ul li a{
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.contact-links {
+  width: 100%;
+  float: left;
+  padding: 30px 0;
+  border-bottom: 2px solid #333333;
+  border-top: 2px solid #333333;
+  margin: 46px 0;
+}
+
+@media(max-width: 760px) {
+  .contact ul li {
+    float: none;
+    margin-bottom: 15px;
+  }
+}
+
+.contact-hover a:hover{
+  color: #e0be4f;
+}
+
+#email a{
+  color: #e0be4f;
+}
+
+#email a:hover{
+  color: #3dd0cb;
+}
+
+.bio-text {
+  width: 50%;
+  color: white;
+  float: left;
+}
+
+.bio-text p {
+  margin-bottom: 30px;
+}
+
+.bio-rail {
+  width: 45%;
+  float: right;
+  color: white;
+}
+
+.contact h2 {
+  text-align: left;
+  font-size: 26px;
+  font-weight: 700;
+  color: #e0be4f;
+  float: left;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #333333;
+  width: 100%;
+  margin-bottom: 24px;
+  margin-top: 20px;
+  line-height: initial;
+}
+
+.bio-items {
+  width: 48%;
+  float: left;
+}
+
+.bio-items p {
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 26px;
+}
+
+.margin-right {
+  margin-right: 4%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.dark-text {
+  color: #8e8d8d
 }
