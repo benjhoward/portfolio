@@ -29,7 +29,7 @@
         <img src="img/bh-header.svg" height="222px" alt="Ben Howard • Design"/>
         <h1 class="no-hover" id="greet">Good morning.</h1>
         <div class="center-text header-text">
-          <p>It&rsquo;s nice to see you. My name is Ben Howard and I&rsquo;m a designer who codes in Pittsburgh, PA. Feel free to check out some of the things I&rsquo;ve made or drop me a line if you&rsquo;d like to chat.</p>
+          <p>It&rsquo;s nice to see you. My name is Ben Howard and I&rsquo;m a designer who codes in Pittsburgh, PA. Feel free to check out some of the things I&rsquo;ve made or, if you&rsquo;d like to chat, drop me a line at <span style="color: #e0be4f; font-weight: 700;"><a href="mailto:ben@benhoward.design">ben@benhoward.design</a></span>.</p>
         </div>
       </div>
     </header>
@@ -46,7 +46,7 @@
               </ul>
               <ul class="one-half nav-hover">
                 <li><a href="index.html">WORK</a></li>
-                <li><a href="pages/contact.html">CONTACT</a></li>
+                <li><a href="pages/contact.html">ABOUT</a></li>
               </ul>
             </div>
          </section> 
@@ -279,9 +279,29 @@
         }
       });
 
-      var greetID = document.getElementById('greet').onclick = function() {
-        this.innerHTML = 'Good evening.';
+      // var greetID = document.getElementById('greet').onclick = function() {
+      //   this.innerHTML = 'Good evening.';
+      // };
+
+      function changeText(){
+  
+        var greetID = document.getElementById('greet');
+        var hour = new Date().getHours();
+        
+        if (hour > 12 && hour < 16){
+          greetID.innerHTML = 'Good afternoon.';
+        } 
+        else if (hour > 16){
+          greetID.innerHTML = 'Good evening.';
+        }
+        else {
+          greetID.innerHTML = 'Good morning.';
+        } 
       }; 
+
+      window.onload = function() {
+        changeText();
+      }
 
     </script>
 
