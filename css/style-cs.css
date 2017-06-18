@@ -67,6 +67,12 @@ img {
   }
 }
 
+@media(max-width: 1024px) {
+  .container-index {
+    top: 86px;
+  }
+}
+
 .container:before,
 .container:after {
   content: "";
@@ -231,7 +237,7 @@ nav {
   display: block;
 }
 
-@media(max-width: 700px) {
+@media(max-width: 760px) {
   #nav-logo-name {
     display: none;
   }
@@ -240,7 +246,7 @@ nav {
   }
   .nav-hover {
     float: right;
-    width: 220px;
+    width: 270px;
   }
 }
 
@@ -270,6 +276,35 @@ nav {
 @media(max-width: 500px) {
   nav {
     top: 550px;
+  }
+}
+
+@media(max-width: 1024px) {
+  .navbar {
+    position: fixed;
+    border-bottom: 2px solid #333333;
+  }
+  .container-nav {
+    top: 0;
+  }
+  nav, .navbar-wrapper {
+    top: 0;
+    float: left;
+    position: fixed;
+  }
+}
+
+.nav-holder {
+  height: 83px;
+  width: 100%;
+  display: none;
+  position: relative;
+  float: left;
+}
+
+@media(max-width: 760px) {
+  .nav-holder {
+    display: block;
   }
 }
 
@@ -344,6 +379,13 @@ h1:not(.no-hover):hover {
   }
 }
 
+@media(max-width: 760px) {
+  .header-h1 {
+    position: relative;
+    display: block;
+  }
+}
+
 .img-link:hover {
   opacity: .9;
 }
@@ -378,7 +420,7 @@ h3 {
   width: 50%;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .center-text p {
     width: 100%;
   }
@@ -405,6 +447,12 @@ main {
   display: block;
 }
 
+@media(max-width: 1024px) {
+  .work-grid {
+    top: 0;
+  }
+}
+
 @media(max-width: 1000px) {
   main {
     top: 466px;
@@ -413,7 +461,13 @@ main {
 
 @media(max-width: 800px) {
   main {
-    top: 520px;
+    top: 556px;
+  }
+}
+
+@media(max-width: 760px) {
+  main {
+    top: 0;
   }
 }
 
@@ -955,7 +1009,7 @@ h6 {
   color: black;
 }
 
-@media(max-width: 700px) {
+@media(max-width: 760px) {
   #footer-mobile-logo {
     width: 43px;
   }
@@ -970,6 +1024,9 @@ h6 {
   }
   .footer-item {
     width: 100%;
+  }
+  .container-footer {
+    top: 0;
   }
 }
 
@@ -1021,9 +1078,9 @@ h6 {
     top: 520px;
   }
 }
-@media(max-width: 700px) {
+@media(max-width: 760px) {
   .index-footer {
-    top: 466px;
+    top: 0;
   }
 }
 
