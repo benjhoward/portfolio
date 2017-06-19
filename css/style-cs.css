@@ -1043,6 +1043,15 @@ h6 {
   }
 }
 
+@media(max-width: 400px) {
+  #footer-mobile-logo {
+    display: none;
+  }
+  #footer-nav-logos {
+    width: 100%;
+  }
+}
+
 .no-b-padding {
   padding-bottom: 0;
 }
