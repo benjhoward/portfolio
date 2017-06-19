@@ -69,7 +69,7 @@ img {
 
 @media(max-width: 1024px) {
   .container-index {
-    top: 86px;
+    top: 0;
   }
 }
 
@@ -264,6 +264,12 @@ nav {
   top: 0;
 }
 
+.navbar-pages {
+  position: fixed;
+  height: 85px;
+
+}
+
 @media(max-width: 1000px) {
   nav {
     top: 490px;
@@ -283,7 +289,7 @@ nav {
 }
 
 @media(max-width: 1024px) {
-  .navbar {
+  .navbar, .navbar-pages {
     position: fixed;
     border-bottom: 2px solid #333333;
   }
@@ -305,11 +311,11 @@ nav {
   float: left;
 }
 
-@media(max-width: 760px) {
+/*@media(max-width: 760px) {
   .nav-holder {
     display: block;
   }
-}
+}*/
 
 /* SUMMARY SECTION */
 
@@ -364,7 +370,10 @@ h1:not(.no-hover):hover {
   width: 100%;
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 1024px) {
+  .header-h1 {
+    padding-top: 130px;
+  }
   .cs-summary h1 {
     font-size: 4rem;
     padding-top: 20px;
@@ -456,9 +465,10 @@ main {
   }
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 1024px) {
   main {
-    top: 466px;
+    top: 530px;
+    padding-top: 32px;
   }
 }
 
