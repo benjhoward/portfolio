@@ -396,6 +396,7 @@ h1:not(.no-hover):hover {
   .cs-summary h1 {
     font-size: 2.8rem;
     padding-bottom: 30px;
+    line-height: 2.4rem;
   }
   .top-dek {
     padding-bottom: 4px !important;
