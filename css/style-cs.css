@@ -442,6 +442,7 @@ h3 {
 
 .header-text p {
   width: 50%;
+  font-weight: 400;
 }
 
 @media (max-width: 1024px) {
@@ -802,13 +803,13 @@ h5 {
     float: left;
     margin-left: -10px;
     margin-bottom: -10px;
-    width: 100%
+    width: 110%
   }
 }
 
 @media (max-width: 700px) {
   .color-box {
-    width: 44%;
+    width: 42.6%;
   }
 }
 
@@ -1058,9 +1059,9 @@ h6 {
 }
 
 @media(max-width: 400px) {
-  #footer-mobile-logo {
+  /*#footer-mobile-logo {
     display: none;
-  }
+  }*/
   #footer-nav-logos {
     width: 100%;
     height: 30px;
@@ -1103,6 +1104,7 @@ h6 {
 
 .index-footer {
   top: 560px;
+  background-color: black;
 }
 
 @media(max-width: 1000px) {
