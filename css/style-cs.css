@@ -470,6 +470,7 @@ main {
   float: left;
   width: 100%;
   display: block;
+  z-index: 1000;
 }
 
 @media(max-width: 1024px) {
