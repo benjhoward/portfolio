@@ -384,13 +384,16 @@
         if (hour > 12 && hour < 16){
           greetID.innerHTML = 'Good afternoon.';
         } 
+        else if (hour == 16){
+          greetID.innerHTML = 'Good afternoon.';
+        }
         else if (hour > 16){
           greetID.innerHTML = 'Good evening.';
         }
         else {
           greetID.innerHTML = 'Good morning.';
         } 
-      }; 
+      } 
 
       window.onload = function() {
         changeText();
