@@ -381,9 +381,12 @@
         var greetID = document.getElementById('greet');
         var hour = new Date().getHours();
         
-        if (hour > 12 && hour < 16){
+        if (hour == 12) {
           greetID.innerHTML = 'Good afternoon.';
         } 
+        else if (hour > 12 && hour < 16){
+          greetID.innerHTML = 'Good afternoon.';
+        }
         else if (hour == 16){
           greetID.innerHTML = 'Good afternoon.';
         }
@@ -393,7 +396,7 @@
         else {
           greetID.innerHTML = 'Good morning.';
         } 
-      } 
+      }; 
 
       window.onload = function() {
         changeText();
