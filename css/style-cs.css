@@ -1196,6 +1196,17 @@ h6 {
   background-image: url(../img/home-futurevoices.gif);
 }
 
+#ngv-pic {
+  background-image: url(../img/home-ngv.jpg);
+}
+
+#aga-score-pic {
+  background-image: url(../img/home-aga-score.jpg);
+}
+
+#aga-map-pic {
+  background-image: url(../img/home-aga-map.jpg);
+}
 
 /* CONTACT */
 
