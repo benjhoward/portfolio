@@ -1499,6 +1499,18 @@ h6 {
     display: block;
   }
 }
+
+#btn-showcase li {
+  border: 1px solid black;
+  color: black;
+  margin: 20px auto 0px auto;
+}
+
+#btn-showcase li:hover {
+  background-color: #25AAE1;
+  color: white;
+  border-color: #25AAE1;
+}
 /*.mobile-button {
   float: left;
   display: none;
