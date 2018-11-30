@@ -595,6 +595,13 @@ main {
   padding-bottom: 12%;
 }
 
+#ngv-process {
+  background-image: url(../img/cs-ngv-plow.png);
+  background-size: cover;
+  padding-top: 18%;
+  padding-bottom: 18%;
+}
+
 .research {
   padding: 0 18px;
   box-sizing: border-box;
@@ -678,6 +685,9 @@ h5 {
   h5 {
     font-size: 3rem;
   }
+  .parallax {
+    background-attachment: scroll;
+  }
 }
 
 .process-left, .process-right {
@@ -711,6 +721,10 @@ h5 {
   background-image: url(../img/cs-breakthru-inspiration.jpg);
 }
 
+#ngv-inspiration {
+  background-image: url(../img/cs-ngv-inspiration.png);
+}
+
 .float-box-right {
   padding: 40px;
   box-shadow: 0 0 60px rgba(0,0,0,.25);
@@ -729,11 +743,11 @@ h5 {
 }
 
 @media(max-width: 700px) {
-  #user-flows, #inspiration{
+  #user-flows, #inspiration, #ngv-inspiration{
     padding: 0;
     background-image: none;
   }
-  #inspiration, #inspiration.float-box-right {
+  #inspiration, #ngv-inspiration, #ngv-inspiration.float-box-right, #inspiration.float-box-right {
     background-color: #f2f2f2;
   }
   .float-box-right {
@@ -1537,3 +1551,21 @@ h6 {
     display: block;
   }
 }*/
+
+.more-margin-t {
+  margin-top: 4%;
+}
+
+.btn-summary {
+  margin-top: 0;
+}
+
+.btn-summary li{
+  border: 1px solid #e0be4f;
+  color: white;
+  margin: 40px auto 0px auto;
+}
+
+.btn-summary li:hover {
+  background-color: #e0be4f;
+}
