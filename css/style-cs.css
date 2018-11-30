@@ -983,6 +983,7 @@ h2 {
   height: 300px;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 
 @media(max-width: 900px) {
@@ -997,11 +998,15 @@ h2 {
   height: 100%;
   background-color: rgba(0,0,0,.9);
   color: white;
-  opacity: 0;
+  margin-top: 300px;
 }
 
-.footer-hover:hover {
-  opacity: 1;
+.home-item, .footer-item, .footer-hover {
+  transition: 0.7s;
+}
+
+.home-item:hover, .footer-item:hover .footer-hover {
+  margin-top: 0;
 }
 
 @media(max-width: 1024px) {
