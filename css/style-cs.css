@@ -1575,4 +1575,54 @@ h6 {
 
 .btn-summary li:hover {
   background-color: #e0be4f;
+  border: 1px solid #e0be4f;
+}
+
+.summary-lede {
+  height: 100vh;
+  background-image: url(../img/cs-tol.png);
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2% 0;
+}
+
+/*.summary-hed {
+  top: 20%;
+}*/
+
+.summary-icon {
+  width: 12vw;
+  margin: 0 0 5% 0;
+}
+
+.btn-probsol li{
+  color: black;
+  background: white;
+  border: 1px solid white;
+  margin: 30px auto 0px auto;
+}
+
+@media (max-width: 800px) {
+  .summary-lede {
+    height: auto;
+  }
+  .summary-hed {
+    padding: 20% 0;
+  }
+  .summary-icon {
+    width: 22vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .summary-hed {
+    padding: 24% 0 20% 0;
+  }
+  .summary-icon {
+    width: 40vw;
+  }
 }
