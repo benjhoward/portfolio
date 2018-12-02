@@ -1058,6 +1058,12 @@ h6 {
   color: black;
 }
 
+@media(max-width: 800px) {
+  .footer-nav {
+    padding-bottom: 11%;
+  }
+}
+
 @media(max-width: 760px) {
   #footer-mobile-logo {
     width: 33px;
