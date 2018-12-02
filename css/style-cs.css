@@ -1124,7 +1124,7 @@ h6 {
 }
 
 .index-footer {
-  top: 560px;
+  top: 556px;
   background-color: black;
 }
 
@@ -1226,6 +1226,9 @@ h6 {
 
 #aga-map-pic {
   background-image: url(../img/home-aga-map.jpg);
+}
+#tol-pic {
+  background-image: url(../img/home-tol.png);
 }
 
 /* CONTACT */
