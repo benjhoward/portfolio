@@ -1610,6 +1610,12 @@ h6 {
   margin: 30px auto 0px auto;
 }
 
+@media (max-width: 1030px){
+  .summary-big p {
+    width: 100%;
+  }
+}
+
 @media (max-width: 800px) {
   .summary-lede {
     height: auto;
@@ -1697,7 +1703,7 @@ h6 {
   line-height: 32px;
 }
 
-@media(max-width: 700px){
+@media(max-width: 800px){
   .summary-leading p{
     line-height: 28px;
   }
