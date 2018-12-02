@@ -1630,3 +1630,78 @@ h6 {
     width: 40vw;
   }
 }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,.8);
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 50%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: fixed;
+  top: 100px;
+  right: 25px;
+  font-size: 30px;
+  z-index: 1;
+  text-shadow: 2px 2px 14px #000000;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+.summary-lb {
+  border-bottom: 1px dashed #e0be4f;
+  color: #e0be4f;
+  font-weight: 600;
+  /*padding: 0px 7px;
+  background-color: #e0be4f;
+  border-radius: 5px;
+  font-weight: 600;*/
+}
+
+.summary-lb:hover{
+  border-bottom: 1px dashed #3dd0cb;
+  color: #3dd0cb;
+  cursor: pointer;
+}
+
+.summary-leading p{
+  line-height: 32px;
+}
+
+@media(max-width: 700px){
+  .summary-leading p{
+    line-height: 28px;
+  }
+  .modal-content {
+    width: 80%;
+  }
+}
